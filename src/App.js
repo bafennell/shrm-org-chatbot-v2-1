@@ -34,12 +34,12 @@ class App extends Component {
               title: 'Here are some common topics that people need help with.',
               subTitle: 'Please choose an option from below',
               buttons: [
-                { text: 'Family and Medical Leave Act (FMLA)', value: 'FMLA' },
-                { text: 'Fair Labor Standards Act (FLSA)', value: 'FLSA' },
+                { text: 'Americans with Disabilities Act (ADA)', value: 'ADA' },
+                { text: 'Annual Conference', value: 'Annual Conference' },
                 { text: 'Compensation', value: 'compensation' },
+                { text: 'Family and Medical Leave Act (FMLA)', value: 'FMLA' },
                 { text: 'Membership', value: 'membership' },
-                { text: 'Annual Conference', value: 'conference' },
-                { text: 'What topic can I help you with?', value: 'question' }
+                { text: 'Other Topics', value: 'question' }
               ]
             }
           ]
@@ -126,15 +126,12 @@ class App extends Component {
                   'Here are some common topics that people need help with.',
                 subTitle: 'Please choose an option from below',
                 buttons: [
-                  {
-                    text: 'Family and Medical Leave Act (FMLA)',
-                    value: 'FMLA'
-                  },
-                  { text: 'Fair Labor Standards Act (FLSA)', value: 'FLSA' },
+                  { text: 'Americans with Disabilities Act (ADA)', value: 'ADA' },
+                  { text: 'Annual Conference', value: 'Annual Conference' },
                   { text: 'Compensation', value: 'compensation' },
+                  { text: 'Family and Medical Leave Act (FMLA)', value: 'FMLA' },
                   { text: 'Membership', value: 'membership' },
-                  { text: 'Annual Conference', value: 'conference' },
-                  { text: 'What topic can I help you with?', value: 'question' }
+                  { text: 'Other Topics', value: 'question' }
                 ]
               }
             ]
@@ -258,7 +255,7 @@ class App extends Component {
         >
           {messages &&
             messages.map((message, idx) => {
-              const user = message.id ? 'You' : 'SHRM Bot';
+              const user = message.id ? 'You' : 'Ask SHRM';
               const messagePayload = {
                 ...message,
                 user,
